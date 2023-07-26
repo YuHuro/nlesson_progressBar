@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    border-radius: 20px;
+}
+
+.progress{
+    width: 400px;
+    height: 15px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5242471988795518) 0%, rgba(0,187,229,0.44861694677871145) 88%);
+    margin: 200px;
+}
+
+.progress__bar{
+    width: 400px;
+    height: 15px;
+    animation: progress 2s infinite;
+    background: rgb(0,23,36);
+    background: linear-gradient(90deg, rgba(0,23,36,1) 0%, rgba(192,0,229,1) 85%);
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
